@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "evan-dotfiles": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1733782686,
+        "narHash": "sha256-TzONjDH4d5HwYguCT6iYkzF5K9uCC/KRZIht1XbRnwk=",
+        "owner": "vEnhance",
+        "repo": "dotfiles",
+        "rev": "38ea9f7a9017f7cfe0751c475b8112bd530d0c7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vEnhance",
+        "repo": "dotfiles",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1733759999,
+        "narHash": "sha256-463SNPWmz46iLzJKRzO3Q2b0Aurff3U1n0nYItxq7jU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a73246e2eef4c6ed172979932bc80e1404ba2d56",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "evan-dotfiles": "evan-dotfiles",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
