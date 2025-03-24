@@ -1,4 +1,4 @@
-\chapter{Synopsis of the weighted orbital integral
+\section{Synopsis of the weighted orbital integral
   $\Orb((\gamma, \uu, \vv^\top), \phi \otimes \oneV, s)$
   for $(\gamma, \uu, \vv^\top) \in (S_2(F) \times V'_2(F))\rs$
   and $\phi \in \HH(S_2(F))$}
@@ -13,7 +13,7 @@ of the parameters used to state the formula,
 as well as the dependencies between the parameters that needs to hold
 in order for the matching to work.
 
-\section{Definition}
+\subsection{Definition}
 For our conjecture, it will be enough to define the weighted orbital integral
 in the case where our function is of the form
 \[ \phi \otimes \oneV \]
@@ -83,13 +83,20 @@ Wei Zhang suggests that this conjecture can be proven by similar means
 to \Cref{thm:rel_fundamental_lemma},
 but since it is not necessary for this paper we do not pursue this proof here.
 
-\section{Basis for the indicator functions in $\HH(S_2(F))$}
+\subsection{Basis for the indicator functions in $\HH(S_2(F))$}
 \label{sec:hecke_basis_FJ}
 From now on assume $n = 2$.
+\ifthesis
 This section is almost an exact analog of \Cref{ch:orbital0_hecke_basis},
 so we will be slightly terser.
 Again set
 \[ S_2(F) \coloneqq \left\{ g \in \GL_2(E) \mid g \bar{g} = \id_2 \right\}. \]
+\fi
+\ifpaper
+Set
+\[ S_2(F) \coloneqq \left\{ g \in \GL_2(E) \mid g \bar{g} = \id_2 \right\}. \]
+\fi
+
 We again have a Cartan decomposition indexed by a single integer $r \ge 0$:
 \begin{lemma}
   [Cartan decomposition of $S_2(F)$]
@@ -126,11 +133,11 @@ we get a basis of indicator functions for the Hecke algebra $\HH(S_2(F))$:
   form a basis of $\HH(S_2(F))$.
 \end{corollary}
 
-\section{Parametrization of $\gamma$}
+\subsection{Parametrization of $\gamma$}
 From now on assume $n = 2$,
 and that $(\gamma, \uu, \vv^\top) \in (S_2(F) \times V'_2)\rs$ is regular.
 
-\subsection{Identifying an orbit representative}
+\subsubsection{Identifying an orbit representative}
 The weighted orbital integral depends only on the $H$-orbit of $(\gamma, \uu, \vv^\top)$.
 Consequently, we may assume without loss of generality
 (via multiplication by a suitable change-of-basis $h \in H = \GL_2(F)$) that
@@ -149,7 +156,7 @@ Then, viewed as an element of $\GL_3(F)$ via the embedding we described earlier,
     a & b & 0 \\
     c & d & 1 \\
     0 & e & 0
-  \end{pmatrix} \in \GL_3(F).
+  \end{pmatrix} \in \Mat_3(F).
 \]
 Thus, our definition of regular requires that
 $\begin{pmatrix} 0 \\ 1 \end{pmatrix}$
@@ -170,7 +177,7 @@ We also know that $\gamma \in S_2(F)$, which gives us relations on $a$, $b$, $c$
   \end{aligned}
 \]
 
-\subsection{Simplification due to the matching of non-split unitary group}
+\subsubsection{Simplification due to the matching of non-split unitary group}
 Like before, we focus on the case where regular $(\gamma, \uu, \vv^\top)$
 matches an element in the non-split unitary group.
 As we described in \Cref{prop:valuation_delta_matching_semilie},
@@ -194,10 +201,16 @@ And since $d = -\bar a c / \bar c$, it follows $d$ is a unit.
 In other words, \Cref{assume:a_odd} gives the direct corollary
 \[ v(a) = v(d) = 0. \]
 
-\section{Parameters used in the calculation of the weighted orbital integral}
+\subsection{Parameters used in the calculation of the weighted orbital integral}
+\ifthesis
 The situation is simpler than \Cref{sec:param_orbital0}
 and we will state our derivative in terms of the five integers
 $r$, $v(b)$, $v(c)$, $v(e)$ and $v(d-a)$.
+\fi
+\ifpaper
+We will state our derivative in terms of the five integers
+$r$, $v(b)$, $v(c)$, $v(e)$ and $v(d-a)$.
+\fi
 From \Cref{assume:a_odd}, we actually get that
 \begin{assume}
   \label{assume:FJ}
@@ -215,7 +228,7 @@ $\Orb(\guv, \phi \otimes \oneV, s) = 0$ identically in $s$ in that situation.
 
 For convenience, we summarize all the assumptions on the shape of $\guv$ in the following single lemma.
 \begin{lemma}
-  [Parameters for $\guv \in (S_2(F) \times V'_(F))\rs$]
+  [Parameters for $\guv \in (S_2(F) \times V'_2(F))\rs$]
   \label{lem:semi_lie_params}
   Suppose $\guv \in (S_2(F) \times V'_2(F))\rs$.
   Then one can choose a representative of the $\GL_2(F)$-orbit of $\guv$ of the form

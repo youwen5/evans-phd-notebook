@@ -4,7 +4,6 @@
 \usepackage{hyperref}
 \usepackage[obeyFinal,textsize=scriptsize,shadow,loadshadowlibrary]{todonotes}
 \usepackage[shortlabels]{enumitem}
-\usepackage[usenames,dvipsnames,svgnames]{xcolor}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -31,6 +30,7 @@
 \declaretheorem[name=Proposition,sibling=theorem]{proposition}
 \declaretheorem[name=Corollary,sibling=theorem]{corollary}
 \declaretheorem[name=Conjecture,sibling=theorem]{conjecture}
+\declaretheorem[name=Hypothesis,sibling=theorem]{hypothesis}
 \declaretheorem[name=Assumption,sibling=theorem]{assume}
 \declaretheorem[name=Definition,sibling=theorem,style=definition]{definition}
 \declaretheorem[name=Example,sibling=theorem,style=definition]{example}
@@ -122,9 +122,7 @@
 \newcommand{\OO}{O} % to avoid confusion with structure sheaf I guess
 \newcommand{\Sheaf}{\mathcal{O}} % sheaf O
 
-\newcommand{\jiao}{\mathop{\otimes}^{\mathbf{L}}} % this is a cute macro name (交)
-% found in arXiv:2402.1767v1 while trying to search for where \mathbb{L} was defined
-% (answer: it's not, this entire glyph is just generally used for derived tensor products)
+\newcommand{\jiao}{\mathop{\otimes}^{\mathbf{L}}} % 交, adopted from arXiv:2402.1767v1
 
 \usepackage{listings}
 \lstset{basicstyle=\ttfamily,

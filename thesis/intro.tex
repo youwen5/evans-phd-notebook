@@ -1,9 +1,9 @@
-\chapter{Introduction}
+\section{Introduction}
 Throughout this whole paper, $p > 2$ is a prime,
 $F$ is a finite extension of $\QQ_p$,
 and $E/F$ is an unramified quadratic field extension.
 
-\section{Brief history and motivation for the arithmetic fundamental lemma}
+\subsection{Brief history and motivation for the arithmetic fundamental lemma}
 The primary motivation for this paper arises from
 the study of conjectured variants of the arithmetic fundamental lemma
 for spherical Hecke algebras proposed in \cite{ref:AFLspherical}.
@@ -37,7 +37,7 @@ A more detailed account can be found in \cite{ref:survey}.
   \label{fig:history}
 \end{figure}
 
-\subsection{The GGP conjectures, and the fundamental lemma of Jacquet-Rallis}
+\subsubsection{The GGP conjectures, and the fundamental lemma of Jacquet-Rallis}
 In modern arithmetic geometry, a common theme is that there are deep connections
 between geometric data with the values of related $L$-functions.
 
@@ -92,7 +92,7 @@ The fundamental lemma has since been proved completely;
 a local proof was given by Beuzart-Plessis \cite{ref:BeuzartPlessis}
 while a global proof was given for large characteristic by W.\ Zhang \cite{ref:Wei2021}.
 
-\subsection{The arithmetic GGP conjectures, and the arithmetic fundamental lemma}
+\subsubsection{The arithmetic GGP conjectures, and the arithmetic fundamental lemma}
 At around the same time Waldspurger's formula was published,
 Gross-Zagier \cite{ref:gross_zagier} proved a formula
 relating the height of Heegner points
@@ -122,10 +122,11 @@ $\mathbf{1}_{(K')^\flat \times K'} \in \HH((G')^\flat \times G, (K')^\flat \time
 \[ \left. \pdv{}{s} \right\rvert_{s=0} \Orb(\gamma, \mathbf{1}_{(K')^\flat \times K'}, s) \]
 for $\gamma \in (G')^\flat \times G'$,
 to arithmetic intersection numbers on a certain Rapoport-Zink formal moduli space.
-The AFL in \cite{ref:AFL} has since been proven over $p$-adic fields for any prime $p$ in
-Mihatsch-Zhang \cite{ref:MZ2021}, W.\ Zhang \cite{ref:Wei2021}, Z.\ Zhang \cite{ref:Zhiyu}.
+The AFL in \cite{ref:AFL} has since been proven over $p$-adic fields for any large
+prime $p$ in Mihatsch-Zhang \cite{ref:MZ2021}, W.\ Zhang \cite{ref:Wei2021},
+and then for any odd prime $p$ by Z.\ Zhang \cite{ref:Zhiyu}.
 
-\subsection{The semi-Lie version of the AFL proposed by Liu}
+\subsubsection{The semi-Lie version of the AFL proposed by Liu}
 There is another different version of the AFL, proposed by Yifeng Liu in
 \cite[Conjecture 1.12]{ref:liuFJ},
 which is often referred to as the \emph{semi-Lie version} of the AFL.
@@ -136,7 +137,7 @@ is sometimes referred to as the \emph{group version}.
 
 A more detailed account of this equivalence is described in \cite[\S1.4]{ref:liuFJ}.
 
-\subsection{Generalizations of FL and AFL to the full spherical Hecke algebra}
+\subsubsection{Generalizations of FL and AFL to the full spherical Hecke algebra}
 Recently it was shown by Leslie \cite{ref:leslie} that in fact
 \eqref{eq:old_FL} holds in greater generality where the indicator function
 $\mathbf{1}_{K^\flat \times K}$ can be replaced by any element in the spherical
@@ -163,8 +164,8 @@ and we discuss it momentarily;
 while the analogous conjectural generalization for the semi-Lie version of the AFL
 is our \Cref{conj:semi_lie_spherical} also discussed in the next section.
 
-\section{Formulation of AFL conjectures to the full spherical Hecke algebra}
-\subsection{The inhomogeneous version of the arithmetic fundamental lemma for spherical Hecke algebras proposed by Li-Rapoport-Zhang}
+\subsection{Formulation of AFL conjectures to the full spherical Hecke algebra}
+\subsubsection{The inhomogeneous version of the arithmetic fundamental lemma for spherical Hecke algebras proposed by Li-Rapoport-Zhang}
 In contrast to the vague motivational cheerleading in the previous section,
 starting in this section we will give more precise statements,
 even though we will necessarily need to reference definitions appearing in later sections.
@@ -200,7 +201,7 @@ We only mention these pieces by name here, with definitions given later:
     The notion of regular semisimple is defined in \Cref{def:regular}.)
     \ii We choose a function $f \in \HH(\U(\VV_n^+))$ from the spherical Hecke algebra,
     defined in \Cref{ch:background}.
-    \ii We define a certain \emph{intersection number} $\Int((g,u), f)$
+    \ii We define a certain \emph{intersection number} $\Int(g, f)$
     in \Cref{def:intersection_number_inhomog}.
     These intersection numbers take place in a Rapoport-Zink space
     described in \Cref{ch:geo}.
@@ -233,7 +234,7 @@ We only mention these pieces by name here, with definitions given later:
     This matching is defined in \Cref{def:matching_inhomog}.
     (Alternatively, one could imagine picking $\gamma \in S_n(F)\rs$ first
     and finding corresponding $g$.
-    It turns out $\gamma$ will match an element of $\U(\VV_n^\pm)\rs$ is general,
+    It turns out $\gamma$ will match an element of $\U(\VV_n^\pm)\rs$ in general,
     and the conjecture is only formulated in the case where $g \in \U(\VV_n^-)$.)
 
     \ii Once $f \in \HH(\U(\VV_n^+))$ is chosen, we select
@@ -294,7 +295,7 @@ with a calculation of intersection numbers in \cite[Corollary 7.4.3]{ref:AFLsphe
 shows that \Cref{conj:inhomog_spherical} holds for $n = 2$,
 cf.\ \cite[Theorem 7.5.1]{ref:AFLspherical}.
 
-\subsection{A proposed arithmetic fundamental lemma for spherical Hecke algebras in the semi-Lie case}
+\subsubsection{A proposed arithmetic fundamental lemma for spherical Hecke algebras in the semi-Lie case}
 The primary focus of this paper is an analogous conjecture to \Cref{conj:inhomog_spherical}
 for the semi-Lie version (also called the Fourier-Jacobi case).
 It serves to complete the analogy given in \Cref{tab:semi_lie_analogy}.
@@ -366,7 +367,7 @@ which in this case can be checked independently.
   Therefore $n=2$ is the first case of \Cref{conj:semi_lie_spherical} worth examining.
 \end{remark}
 
-\subsection{A proposed large image conjecture}
+\subsubsection{A proposed large image conjecture}
 \label{sec:intro_large_kernel}
 
 We let $S_n(F)\rs^-$ (resp.\ $(S_n(F) \times V'_n(F))\rs^-$)
@@ -410,13 +411,15 @@ In fact for $n=2$ we have a more precise result
 showing that the injectivity essentially comes from $v(\uu\vv^\top)$ alone in this case.
 See \Cref{thm:semi_lie_ker_trivial} and \Cref{thm:semi_lie_ker_huge} momentarily.
 
-\section{Results}
+\subsection{Results}
+\ifthesis
 Most of the results here are dedicated toward the semi-Lie version of the AFL,
 which is the new contribution provided by this paper.
 But in \Cref{sec:results_group_AFL} we mention some other results
 we proved for the group version of the AFL.
+\fi
 
-\subsection{Formulas for the orbital side of the semi-Lie AFL conjecture for $n=2$}
+\subsubsection{Formulas for the orbital side of the semi-Lie AFL conjecture for $n=2$}
 \label{sec:semi_lie_intro_formulas}
 The main case of interest in this thesis is the new conjectured AFL
 for the spherical Hecke algebra in the semi-Lie situation in the
@@ -477,7 +480,7 @@ and illustrations of \Cref{thm:semi_lie_formula}.
   Otherwise define $\cc_\guv(k) = 0$.
   Then we have
   \begin{align*}
-    \partial\Orb(\guv, \mathbf{1}_{K'_{S, \le r}}, s)
+    \Orb(\guv, \mathbf{1}_{K'_{S, \le r}}, s)
     &= \sum_{k = -(v(b)+r)}^{2v(e)+v(c)+r} (-1)^k
     \left( 1 + q + q^2 + \dots + q^{\nn_\guv(k)} \right) (q^s)^k \\
     &+ \sum_{k = 2v(d-a)-v(b)+r}^{2v(e)+v(c)-2v(d-a)-r} (-1)^k \cc_\guv(k) q^{v(d-a) + r} (q^s)^k.
@@ -563,7 +566,7 @@ as the base change mentioned in \cite[Lemma 7.1.1]{ref:AFLspherical}.
   \end{itemize}
 \end{example}
 
-\subsection{Kernel and image results for the semi-Lie orbital integral when $n=2$}
+\subsubsection{Kernel and image results for the semi-Lie orbital integral when $n=2$}
 As we mentioned our earlier conjecture \Cref{conj:kernel_semi_lie}
 is true for $n = 2$.
 More precisely, we have the following two theorems.
@@ -572,7 +575,7 @@ More precisely, we have the following two theorems.
   \label{thm:semi_lie_ker_trivial}
   Fix any $\guv \in (S_2(F) \times V'_2(F))\rs^-$.
   Then there doesn't exist any nonzero function $\phi \in \HH(S_2(F))$ such that
-  \[ \partial \Orb \left( (\gamma, \uu, \varpi^i \vv^\top), \phi, \right) = 0 \]
+  \[ \partial \Orb \left( (\gamma, \uu, \varpi^i \vv^\top), \phi \right) = 0 \]
   holds for every integer $i$.
   Thus \Cref{conj:kernel_semi_lie} holds for $n = 2$.
 \end{restatable}
@@ -615,15 +618,26 @@ is indeed injective.
   of formalizing the notion of ``large kernel''.
 \end{remark}
 
-\subsection{The geometric side of the semi-Lie AFL conjecture for $n=2$}
+\subsubsection{The geometric side of the semi-Lie AFL conjecture for $n=2$}
+\ifthesis
 On the geometric side, we were also able to determine the intersection numbers
-subject to the provisionsal \Cref{conj:serre_pullback_space}.
+subject to the provisionsal \Cref{hypo:serre_pullback_space}.
 \begin{theorem}
-  [Semi-Lie AFL for $n=2$]
+  [Semi-Lie AFL for the full Hecke algebra for $n=2$]
   \label{thm:semi_lie_n_equals_2}
-  Assume \Cref{conj:serre_pullback_space}.
+  Assume \Cref{hypo:serre_pullback_space}.
   Then our generalized AFL conjecture, \Cref{conj:semi_lie_spherical}, holds for $n = 2$.
 \end{theorem}
+\fi
+\ifpaper
+To provide evidence for \Cref{conj:semi_lie_spherical}, we prove that:
+\begin{theorem}
+  [Semi-Lie AFL for the full Hecke algebra for $n=2$]
+  \label{thm:semi_lie_n_equals_2}
+  Our generalized AFL conjecture, \Cref{conj:semi_lie_spherical}, holds for $n = 2$.
+\end{theorem}
+\fi
+
 The proof of \Cref{thm:semi_lie_n_equals_2} is built up gradually
 throughout the paper, culminating in \Cref{ch:finale}.
 
@@ -651,11 +665,14 @@ and verify that, under the base change \Cref{ch:satake}
 and the matching condition described in \Cref{ch:rs_matching},
 the two obtained formulas are identical.
 \end{itemize}
-The hypothesis \Cref{conj:serre_pullback_space}
+\ifthesis
+The hypothesis \Cref{hypo:serre_pullback_space}
 is a stipulation that the pullback of two of the divisors
 behaves in the way one would expect.
+\fi
 
-\subsection{Results for $n=3$ for the group AFL}
+\ifthesis
+\subsubsection{Results for $n=3$ for the group AFL}
 \label{sec:results_group_AFL}
 For the group AFL, we were able to fully compute the orbital integral as well.
 The result is too involved to state in the introduction,
@@ -729,11 +746,12 @@ which serves as an analog to \Cref{conj:kernel_semi_lie}.
   Meanwhile, here we have only considered an inhomogeneous version of the AFL
   where the first component is $\mathbf{1}_{K'}$.
 \end{remark}
+\fi
 
-\section{Roadmap}
+\subsection{Roadmap}
 The rest of the paper is organized as follows.
 
-\subsection{Background information}
+\subsubsection{Background information}
 The paper begins with some general background information.
 \begin{itemize}
   \ii In \Cref{ch:background} we provide some preliminary background
@@ -745,13 +763,16 @@ The paper begins with some general background information.
   so that we may speak of $S_n(F)\rs^-$ and $(S_n(F) \times V'_n(F))\rs^-$.
 
   \ii In \Cref{ch:satake} we provide reminders on the Satake transform.
+  \ifthesis
   We also derive concrete formulas for base change when $n = 3$
   (in comparison, the analogous results for $n=2$ are
   \cite[Lemma 7.1.1]{ref:AFLspherical});
   but these formulas are only used towards the end of \Cref{ch:ker} later.
+  \fi
 \end{itemize}
 
-\subsection{Introduction and calculation of the orbital integrals}
+\subsubsection{Introduction and calculation of the orbital integrals}
+\ifthesis
 We then proceed to introduce the orbital integrals.
 \begin{itemize}
   \ii In \Cref{ch:orbital0} we introduce the weighted orbital integral
@@ -767,16 +788,31 @@ We then proceed to introduce the orbital integrals.
   The analogous calculation is in \Cref{ch:orbitalFJ1,ch:orbitalFJ2},
   which is used to prove \Cref{thm:semi_lie_formula} and its corollaries.
 \end{itemize}
+\fi
+\ifpaper
+In \Cref{ch:orbital0} we introduce the weighted orbital integral
+for the group version of the AFL for full spherical Hecke algebra briefly.
+This is only for comparison with the definition in later sections
+and will not be used again afterwards.
 
-\subsection{Large kernel and image}
+In \Cref{ch:orbitalFJ0} we introduce the weighted orbital integral
+for the semi-Lie version of the AFL for full spherical Hecke algebra,
+and state the parameters to be used in \Cref{lem:semi_lie_params}.
+The main calculation is carried out in \Cref{ch:orbitalFJ1,ch:orbitalFJ2},
+which is used to prove \Cref{thm:semi_lie_formula} and its corollaries.
+\fi
+
+\subsubsection{Large kernel and image}
 Having completely computed the orbital integrals in these cases,
 we take a side trip in \Cref{ch:ker} to prove the large image results asserted.
 We establish \Cref{conj:kernel_semi_lie} for $n = 2$ by proving the asserted
 \Cref{thm:semi_lie_ker_trivial} and \Cref{thm:semi_lie_ker_huge}
 for the orbital integral on $(S_2(F) \times V'_2(F))\rs^-$.
+\ifthesis
 We also prove \Cref{thm:no_kernel_group} for the orbital integral on $S_3(F)\rs^-$.
+\fi
 
-\subsection{Geometric side}
+\subsubsection{Geometric side}
 We then turn our attention to the other parts of the two versions of the AFL.
 In addition to stating the relevant definitions,
 the subsequent chapters aim to prove \Cref{thm:semi_lie_n_equals_2}.
@@ -797,6 +833,7 @@ the subsequent chapters aim to prove \Cref{thm:semi_lie_n_equals_2}.
 Finally, in \Cref{ch:finale} we tie everything together and establish
 \Cref{thm:semi_lie_n_equals_2}.
 
+\ifthesis
 An approximate dependency chart between the chapters is given in Figure~\ref{fig:depchart}.
 
 \begin{figure}[ht]
@@ -819,3 +856,4 @@ An approximate dependency chart between the chapters is given in Figure~\ref{fig
     arranged to loosely resemble the Batman logo.}
   \label{fig:depchart}
 \end{figure}
+\fi
